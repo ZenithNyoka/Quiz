@@ -1,6 +1,6 @@
 {
-  "name": "LightningQuiz",
-  "short_name": "Quiz",
+  "name": "Data Structure Quiz",
+  "short_name": "DSQuiz",
   "start_url": "/",
   "display": "standalone",
   "icons": [
@@ -59,7 +59,7 @@
       "id": "com.github.android"
     }
   ],
-  "theme_color": "#000000",
-  "background_color": "#000000",
-  "description": "Quiz for Trees"
+  "theme_color": "#ffeb3b",
+  "background_color": "#fffde7",
+  "description": "Quiz For Trees"
 }

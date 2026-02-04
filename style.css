@@ -3,7 +3,6 @@ body {
     font-size: 22px;
     background: 
         radial-gradient(circle at 20% 20%, #fff9c4, #fffde7 80%),
-        url('https://i.imgur.com/1kPz1K8.png');
     background-size: cover;
     background-blend-mode: overlay;
     min-height: 100vh;
@@ -100,3 +99,4 @@ button:focus {
     }
 
 }
+

@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: system-ui, sans-serif;
   background:
     radial-gradient(circle at top left, #fff9c4, transparent 45%),
     radial-gradient(circle at bottom right, #ffe082, transparent 45%),
@@ -20,6 +20,7 @@ body {
   justify-content: center;
   position: sticky;
   top: 0;
+  z-index: 10;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
@@ -44,11 +45,11 @@ main {
 }
 
 .card {
-  background: white;
+  background: #fff;
   border-radius: 16px;
   padding: 24px;
   max-width: 480px;
-  margin: 20px auto;
+  margin: 24px auto;
   box-shadow: 0 8px 20px rgba(0,0,0,0.12);
   animation: fade 0.25s ease;
 }
@@ -64,7 +65,7 @@ main {
   width: 120px;
 }
 
-h2, h3 {
+h2, h3, p {
   text-align: center;
 }
 
@@ -75,6 +76,17 @@ button {
   font-size: 16px;
   border-radius: 12px;
   border: none;
-  background: linear-gradient(45deg, #ffeb3b, #ffc107);
   font-weight: bold;
+  background: linear-gradient(45deg, #ffeb3b, #ffc107);
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 560px;
+  }
 }

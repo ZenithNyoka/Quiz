@@ -86,16 +86,27 @@ function startTopic(topic) {
 function showContent() {
   const content = {
     AVL: [
-      "AVL Trees are self-balancing Binary Search Trees.",
-      "They use rotations to maintain height balance."
+      "An AVL Tree is a self-balancing Binary Search Tree (BST). This means that for every node, the height difference between its left and right subtrees (called the balance factor) is at most 1. Because of this rule, AVL trees always remain balanced.",
+
+      "Whenever an insertion or deletion causes imbalance, AVL Trees use rotations (LL, RR, LR, RL) to restore balance. This guarantees that the height of the tree stays O(log n), making operations efficient.",
+
+      "AVL Trees provide very fast searching because they are strictly balanced. However, insertions and deletions are slightly slower due to the overhead of maintaining balance. They are best used when search operations are frequent."
     ],
+
     Binary: [
-      "Binary Trees allow at most two children.",
-      "They support inorder, preorder, and postorder traversal."
+      "A Binary Tree is a hierarchical data structure in which each node can have at most two children, commonly referred to as the left child and the right child. There is no restriction on the order of elements unless it is a Binary Search Tree.",
+
+      "Binary Trees are widely used to represent hierarchical relationships such as file systems, expression trees, and decision trees. They are also the foundation for more advanced trees like AVL Trees and Heaps.",
+
+      "Binary Trees support three main traversal methods: inorder, preorder, and postorder. These traversals are used for searching, evaluating expressions, and processing nodes in a specific order."
     ],
+
     BTree: [
-      "B-Trees store multiple keys per node.",
-      "They are optimized for disk-based systems."
+      "A B-Tree is a self-balancing multiway search tree where each node can contain multiple keys and have more than two children. It is designed to work efficiently with large blocks of data.",
+
+      "B-Trees are commonly used in databases and file systems because they minimize disk access. All leaf nodes appear at the same level, ensuring consistent search performance.",
+
+      "By storing multiple keys in a single node, B-Trees reduce the height of the tree. This makes searching, insertion, and deletion operations efficient even for very large datasets."
     ]
   };
 
@@ -103,8 +114,10 @@ function showContent() {
     <div class="card">
       <h3>${currentTopic}</h3>
       <p>${content[currentTopic][page - 1]}</p>
-      <button onclick="${page === 1 ? "nextPage()" : "startQuiz()"}">
-        ${page === 1 ? "Next" : "Start Quiz"}
+      <button onclick="${
+        page < content[currentTopic].length ? "nextPage()" : "startQuiz()"
+      }">
+        ${page < content[currentTopic].length ? "Next" : "Start Quiz"}
       </button>
     </div>
   `;
@@ -160,3 +173,4 @@ function showResult() {
 }
 
 showHome();
+

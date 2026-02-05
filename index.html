@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Data Structures Quiz</title>
+  <meta charset="UTF-8" />
+  <title>Data Structures Quiz</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="An interactive Data Structures quiz covering AVL Trees, Binary Trees, and B-Trees." />
-    <meta name="theme-color" content="#ffeb3b" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Interactive Data Structures Quiz covering AVL Trees, Binary Trees, and B-Trees." />
+  <meta name="theme-color" content="#ffeb3b" />
 
-    <link rel="manifest" href="manifest.json" />
-    <link rel="icon" href="tree.png" />
-    <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="tree.png" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <header class="app-header">
+    <span id="backBtn" class="back-btn hidden">←</span>
+    <h1>DS Quiz</h1>
+  </header>
 
-    <div id="app"></div>
+  <main id="app"></main>
 
-    <script src="script.js" defer></script>
+  <script src="script.js" defer></script>
 
-    <script>
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("./sw.js");
-      }
-    </script>
-
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("./sw.js");
+    }
+  </script>
 </body>
 </html>

@@ -4,9 +4,10 @@
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
+  "orientation": "portrait",
   "theme_color": "#ffeb3b",
   "background_color": "#fffde7",
-  "description": "Quiz For Trees",
+  "description": "Offline Data Structures Quiz App",
   "icons": [
     {
       "src": "tree.png",

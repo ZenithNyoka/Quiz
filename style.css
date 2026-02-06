@@ -97,20 +97,17 @@ button {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* Hover effect */
 button:hover {
   background: linear-gradient(135deg, #fff176, #ffb300);
   transform: translateY(-2px);
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.2);
 }
 
-/* Active (click) effect */
 button:active {
   transform: translateY(0) scale(0.97);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
 }
 
-/* Keyboard accessibility */
 button:focus-visible {
   outline: 3px solid rgba(255, 193, 7, 0.6);
   outline-offset: 3px;
@@ -121,3 +118,4 @@ button:focus-visible {
     max-width: 560px;
   }
 }
+

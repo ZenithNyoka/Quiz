@@ -19,7 +19,31 @@ const quizData = {
     { q: "AVL uses which rotations?", o: ["LL, RR", "LR, RL", "All", "None"], a: 2 },
     { q: "Invented by?", o: ["Knuth", "Adelson-Velsky", "Tarjan", "Cormen"], a: 1 },
     { q: "AVL Tree is a?", o: ["BST", "Heap", "Graph", "Trie"], a: 0 },
-    { q: "Balance factor formula?", o: ["L − R", "R − L"], a: 0 }
+    { q: "Balance factor formula?", o: ["L − R", "R − L"], a: 0 },
+
+    // IDENTIFICATION (10)
+    { type: "id", q: "What does AVL stand for?", a: "adelson velsky landis" },
+    { type: "id", q: "What property must always be maintained?", a: "balance" },
+    { type: "id", q: "Max allowed balance factor?", a: "1" },
+    { type: "id", q: "What rotation fixes left-left case?", a: "right rotation" },
+    { type: "id", q: "What rotation fixes right-right case?", a: "left rotation" },
+    { type: "id", q: "Tree type AVL belongs to?", a: "bst" },
+    { type: "id", q: "What ensures fast searching?", a: "balanced height" },
+    { type: "id", q: "Height complexity?", a: "log n" },
+    { type: "id", q: "Imbalance occurs when factor exceeds?", a: "1" },
+    { type: "id", q: "Opposite of balanced tree?", a: "unbalanced" },
+
+    // PROBLEM SOLVING (10)
+    { type: "prob", q: "If balance factor becomes 2, what happens?", a: "rotation needed" },
+    { type: "prob", q: "Insert causes RR imbalance, what fix?", a: "left rotation" },
+    { type: "prob", q: "Insert causes LL imbalance, fix?", a: "right rotation" },
+    { type: "prob", q: "Height grows linearly if?", a: "not balanced" },
+    { type: "prob", q: "AVL search time complexity?", a: "log n" },
+    { type: "prob", q: "After deletion imbalance occurs, action?", a: "rebalance" },
+    { type: "prob", q: "AVL guarantees what height?", a: "minimal" },
+    { type: "prob", q: "Balance factor = 0 means?", a: "perfectly balanced" },
+    { type: "prob", q: "Rotation preserves what order?", a: "bst order" },
+    { type: "prob", q: "LR imbalance fix?", a: "left right rotation" }
   ],
 
   Binary: [
@@ -32,7 +56,31 @@ const quizData = {
     { q: "Max nodes at level L?", o: ["2^L", "L", "L²", "2L"], a: 0 },
     { q: "Leaf nodes have?", o: ["2 children", "1 child", "0 children", "Many"], a: 2 },
     { q: "Height starts from?", o: ["0", "1", "-1", "Any"], a: 0 },
-    { q: "Full BT nodes?", o: ["2n+1", "2n−1", "n²", "n+1"], a: 1 }
+    { q: "Full BT nodes?", o: ["2n+1", "2n−1", "n²", "n+1"], a: 1 },
+
+    // IDENTIFICATION
+    { type: "id", q: "Max children per node?", a: "2" },
+    { type: "id", q: "Topmost node is called?", a: "root" },
+    { type: "id", q: "Node without children?", a: "leaf" },
+    { type: "id", q: "Traversal left-root-right?", a: "inorder" },
+    { type: "id", q: "Traversal root-left-right?", a: "preorder" },
+    { type: "id", q: "Traversal left-right-root?", a: "postorder" },
+    { type: "id", q: "Tree with n nodes max height?", a: "n" },
+    { type: "id", q: "Binary tree with all nodes full?", a: "full tree" },
+    { type: "id", q: "Binary tree sorted property?", a: "bst" },
+    { type: "id", q: "Height balanced tree called?", a: "avl" },
+
+    // PROBLEMS
+    { type: "prob", q: "Height of single node tree?", a: "0" },
+    { type: "prob", q: "Max nodes at level 3?", a: "8" },
+    { type: "prob", q: "Total nodes full tree height 2?", a: "7" },
+    { type: "prob", q: "Leaf count in full tree n internal?", a: "n+1" },
+    { type: "prob", q: "Nodes in complete tree height h?", a: "2^h-1" },
+    { type: "prob", q: "Balanced tree improves?", a: "search speed" },
+    { type: "prob", q: "Binary tree with only right children?", a: "skewed" },
+    { type: "prob", q: "Min nodes height h?", a: "h+1" },
+    { type: "prob", q: "Traversal for sorting BST?", a: "inorder" },
+    { type: "prob", q: "Insert order affects?", a: "shape" }
   ],
 
   BTree: [
@@ -45,7 +93,31 @@ const quizData = {
     { q: "Minimum degree?", o: ["t", "n", "m", "k"], a: 0 },
     { q: "Leaves appear at?", o: ["Same level", "Different", "Random", "Root"], a: 0 },
     { q: "Optimized for?", o: ["RAM", "Cache", "Disk", "CPU"], a: 2 },
-    { q: "Reduces?", o: ["Height", "Memory", "Keys", "Sorting"], a: 0 }
+    { q: "Reduces?", o: ["Height", "Memory", "Keys", "Sorting"], a: 0 },
+
+    // IDENTIFICATION
+    { type: "id", q: "Tree designed for disk storage?", a: "btree" },
+    { type: "id", q: "Max children determined by?", a: "degree" },
+    { type: "id", q: "All leaves at?", a: "same level" },
+    { type: "id", q: "Nodes store?", a: "multiple keys" },
+    { type: "id", q: "Balanced automatically?", a: "yes" },
+    { type: "id", q: "Used in DB indexing?", a: "yes" },
+    { type: "id", q: "Search complexity?", a: "log n" },
+    { type: "id", q: "Reduces disk?", a: "access" },
+    { type: "id", q: "Opposite of binary tree?", a: "multiway" },
+    { type: "id", q: "Minimum keys depends on?", a: "degree" },
+
+    // PROBLEMS
+    { type: "prob", q: "More keys per node means?", a: "less height" },
+    { type: "prob", q: "B-tree improves what operation?", a: "searching" },
+    { type: "prob", q: "Split happens when node?", a: "overflows" },
+    { type: "prob", q: "Merge happens when node?", a: "underflows" },
+    { type: "prob", q: "Balanced property ensures?", a: "fast access" },
+    { type: "prob", q: "Used mostly in?", a: "databases" },
+    { type: "prob", q: "Large block reading improves?", a: "disk performance" },
+    { type: "prob", q: "Height remains?", a: "small" },
+    { type: "prob", q: "Keys sorted inside node?", a: "yes" },
+    { type: "prob", q: "Root split causes?", a: "height increase" }
   ]
 };
 
@@ -85,48 +157,23 @@ function startTopic(topic) {
 
 function showContent() {
   const content = {
-    AVL: [
-      "An AVL Tree is a self-balancing Binary Search Tree (BST). This means that for every node, the height difference between its left and right subtrees (called the balance factor) is at most 1. Because of this rule, AVL trees always remain balanced.",
-
-      "Whenever an insertion or deletion causes imbalance, AVL Trees use rotations (LL, RR, LR, RL) to restore balance. This guarantees that the height of the tree stays O(log n), making operations efficient.",
-
-      "AVL Trees provide very fast searching because they are strictly balanced. However, insertions and deletions are slightly slower due to the overhead of maintaining balance. They are best used when search operations are frequent."
-    ],
-
-    Binary: [
-      "A Binary Tree is a hierarchical data structure in which each node can have at most two children, commonly referred to as the left child and the right child. There is no restriction on the order of elements unless it is a Binary Search Tree.",
-
-      "Binary Trees are widely used to represent hierarchical relationships such as file systems, expression trees, and decision trees. They are also the foundation for more advanced trees like AVL Trees and Heaps.",
-
-      "Binary Trees support three main traversal methods: inorder, preorder, and postorder. These traversals are used for searching, evaluating expressions, and processing nodes in a specific order."
-    ],
-
-    BTree: [
-      "A B-Tree is a self-balancing multiway search tree where each node can contain multiple keys and have more than two children. It is designed to work efficiently with large blocks of data.",
-
-      "B-Trees are commonly used in databases and file systems because they minimize disk access. All leaf nodes appear at the same level, ensuring consistent search performance.",
-
-      "By storing multiple keys in a single node, B-Trees reduce the height of the tree. This makes searching, insertion, and deletion operations efficient even for very large datasets."
-    ]
+    AVL: ["AVL is balanced BST.", "Uses rotations.", "Fast searching."],
+    Binary: ["Binary tree has 2 children.", "Used in many apps.", "Supports traversals."],
+    BTree: ["B-tree is multiway.", "Used in DB.", "Keeps low height."]
   };
 
   app.innerHTML = `
     <div class="card">
       <h3>${currentTopic}</h3>
       <p>${content[currentTopic][page - 1]}</p>
-      <button onclick="${
-        page < content[currentTopic].length ? "nextPage()" : "startQuiz()"
-      }">
+      <button onclick="${page < content[currentTopic].length ? "nextPage()" : "startQuiz()"}">
         ${page < content[currentTopic].length ? "Next" : "Start Quiz"}
       </button>
     </div>
   `;
 }
 
-function nextPage() {
-  page++;
-  showContent();
-}
+function nextPage() { page++; showContent(); }
 
 function startQuiz() {
   score = 0;
@@ -140,28 +187,42 @@ function showQuestion() {
   const q = quizData[currentTopic][questionIndex];
   const total = quizData[currentTopic].length;
 
-  app.innerHTML = `
-    <div class="card">
-      <p>Question ${questionIndex + 1} of ${total}</p>
-      <h3>${q.q}</h3>
-      ${q.o.map((opt, i) =>
-        `<button onclick="checkAnswer(${i})">${opt}</button>`
-      ).join("")}
-    </div>
-  `;
+  if (q.type === "id" || q.type === "prob") {
+    app.innerHTML = `
+      <div class="card">
+        <p>Question ${questionIndex + 1} of ${total}</p>
+        <h3>${q.q}</h3>
+        <input id="answerInput" placeholder="Type answer here">
+        <button onclick="checkTextAnswer()">Submit</button>
+      </div>
+    `;
+  } else {
+    app.innerHTML = `
+      <div class="card">
+        <p>Question ${questionIndex + 1} of ${total}</p>
+        <h3>${q.q}</h3>
+        ${q.o.map((opt, i) => `<button onclick="checkAnswer(${i})">${opt}</button>`).join("")}
+      </div>
+    `;
+  }
+}
+
+function checkTextAnswer() {
+  const input = document.getElementById("answerInput").value.toLowerCase().trim();
+  const correct = quizData[currentTopic][questionIndex].a.toLowerCase();
+  if (input.includes(correct)) score++;
+  questionIndex++;
+  questionIndex < quizData[currentTopic].length ? showQuestion() : showResult();
 }
 
 function checkAnswer(choice) {
   if (choice === quizData[currentTopic][questionIndex].a) score++;
   questionIndex++;
-  questionIndex < quizData[currentTopic].length
-    ? showQuestion()
-    : showResult();
+  questionIndex < quizData[currentTopic].length ? showQuestion() : showResult();
 }
 
 function showResult() {
   inQuiz = false;
-
   app.innerHTML = `
     <div class="card">
       <h2>Quiz Completed</h2>
@@ -173,4 +234,3 @@ function showResult() {
 }
 
 showHome();
-

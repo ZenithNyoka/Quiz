@@ -151,9 +151,24 @@ function startTopic(topic) {
 
 function showContent() {
   const content = {
-    AVL: ["AVL is balanced BST.", "Uses rotations.", "Fast searching."],
-    Binary: ["Binary tree has 2 children.", "Used in many apps.", "Supports traversals."],
-    BTree: ["B-tree is multiway.", "Used in DB.", "Keeps low height."]
+
+    AVL: [
+      "AVL Tree is a SELF-BALANCING Binary Search Tree. It keeps its height small by ensuring the balance factor of every node is −1, 0, or +1.",
+      "When imbalance occurs, AVL Trees use rotations such as LL, RR, LR, and RL to restore balance.",
+      "Because AVL Trees remain balanced, searching, insertion, and deletion all run in O(log n) time."
+    ],
+
+    Binary: [
+      "A Binary Tree is a hierarchical data structure where each node can have at most TWO children: left and right.",
+      "Binary Trees are used in expression evaluation, file systems, searching structures, and decision trees.",
+      "Common traversals are Inorder (sorted for BST), Preorder, and Postorder."
+    ],
+
+    BTree: [
+      "A B-Tree is a multiway balanced search tree designed for efficient disk storage and database indexing.",
+      "Each node can contain multiple keys and children, reducing tree height significantly.",
+      "All leaf nodes remain at the same level, ensuring consistent and fast search performance."
+    ]
   };
 
   app.innerHTML = `
@@ -228,4 +243,5 @@ function showResult() {
 }
 
 showHome();
+
 

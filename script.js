@@ -19,11 +19,7 @@ const quizData = {
     { q: "AVL uses which rotations?", o: ["LL, RR", "LR, RL", "All", "None"], a: 2 },
     { q: "Invented by?", o: ["Knuth", "Adelson-Velsky", "Tarjan", "Cormen"], a: 1 },
     { q: "AVL Tree is a?", o: ["BST", "Heap", "Graph", "Trie"], a: 0 },
-{ 
-  q: "Balance factor formula?", 
-  o: ["L − R", "R − L", "L + R", "R + L"], 
-  a: 0 
-},
+    { q: "Balance factor formula?", o: ["L − R", "R − L", "L + R", "R + L"], a: 0 },
 
     { type: "id", q: "What does AVL stand for?", a: "adelson velsky landis" },
     { type: "id", q: "What property must always be maintained?", a: "balance" },
@@ -256,6 +252,7 @@ function showResult() {
 }
 
 showHome();
+
 
 
 

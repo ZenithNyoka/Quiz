@@ -21,7 +21,6 @@ const quizData = {
     { q: "AVL Tree is a?", o: ["BST", "Heap", "Graph", "Trie"], a: 0 },
     { q: "Balance factor formula?", o: ["L − R", "R − L"], a: 0 },
 
-    // IDENTIFICATION (10)
     { type: "id", q: "What does AVL stand for?", a: "adelson velsky landis" },
     { type: "id", q: "What property must always be maintained?", a: "balance" },
     { type: "id", q: "Max allowed balance factor?", a: "1" },
@@ -33,7 +32,6 @@ const quizData = {
     { type: "id", q: "Imbalance occurs when factor exceeds?", a: "1" },
     { type: "id", q: "Opposite of balanced tree?", a: "unbalanced" },
 
-    // PROBLEM SOLVING (10)
     { type: "prob", q: "If balance factor becomes 2, what happens?", a: "rotation needed" },
     { type: "prob", q: "Insert causes RR imbalance, what fix?", a: "left rotation" },
     { type: "prob", q: "Insert causes LL imbalance, fix?", a: "right rotation" },
@@ -58,7 +56,6 @@ const quizData = {
     { q: "Height starts from?", o: ["0", "1", "-1", "Any"], a: 0 },
     { q: "Full BT nodes?", o: ["2n+1", "2n−1", "n²", "n+1"], a: 1 },
 
-    // IDENTIFICATION
     { type: "id", q: "Max children per node?", a: "2" },
     { type: "id", q: "Topmost node is called?", a: "root" },
     { type: "id", q: "Node without children?", a: "leaf" },
@@ -70,7 +67,6 @@ const quizData = {
     { type: "id", q: "Binary tree sorted property?", a: "bst" },
     { type: "id", q: "Height balanced tree called?", a: "avl" },
 
-    // PROBLEMS
     { type: "prob", q: "Height of single node tree?", a: "0" },
     { type: "prob", q: "Max nodes at level 3?", a: "8" },
     { type: "prob", q: "Total nodes full tree height 2?", a: "7" },
@@ -95,7 +91,6 @@ const quizData = {
     { q: "Optimized for?", o: ["RAM", "Cache", "Disk", "CPU"], a: 2 },
     { q: "Reduces?", o: ["Height", "Memory", "Keys", "Sorting"], a: 0 },
 
-    // IDENTIFICATION
     { type: "id", q: "Tree designed for disk storage?", a: "btree" },
     { type: "id", q: "Max children determined by?", a: "degree" },
     { type: "id", q: "All leaves at?", a: "same level" },
@@ -107,7 +102,6 @@ const quizData = {
     { type: "id", q: "Opposite of binary tree?", a: "multiway" },
     { type: "id", q: "Minimum keys depends on?", a: "degree" },
 
-    // PROBLEMS
     { type: "prob", q: "More keys per node means?", a: "less height" },
     { type: "prob", q: "B-tree improves what operation?", a: "searching" },
     { type: "prob", q: "Split happens when node?", a: "overflows" },
@@ -234,3 +228,4 @@ function showResult() {
 }
 
 showHome();
+
